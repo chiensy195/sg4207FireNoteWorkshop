@@ -11,6 +11,10 @@ import { AngularFireModule } from 'angularfire2';
 import { FIREBASE_CONFIG } from './firebase.credential';
 
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { NoteListServiceProvider } from '../providers/note-list-service/note-list-service';
+
+import { AngularFireStorageModule } from 'angularfire2/storage';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,9 +23,11 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFireStorageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -31,7 +37,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    NoteListServiceProvider
   ]
 })
 export class AppModule {}

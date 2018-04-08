@@ -7,12 +7,22 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>AddNote</ion-title>
+    <ion-title>Add New Note</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-item>
+    <ion-label>Title</ion-label>
+    <ion-input [(ngModel)]="note.title" placeholder="Hybrid Approach"></ion-input>
+  </ion-item>>
 
+  <ion-item>
+    <ion-label>Content</ion-label>
+    <ion-input [(ngModel)]="note.content" placeholder="Hybrid Mobile Technology - Ionic Angular Framework"></ion-input>
+  </ion-item>>
+
+  <button ion-button block clear (click)="addNote(note)">Add</button>
 </ion-content>
