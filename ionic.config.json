@@ -1,0 +1,8 @@
+{
+  "name": "FireNote",
+  "app_id": "10b4177b",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
