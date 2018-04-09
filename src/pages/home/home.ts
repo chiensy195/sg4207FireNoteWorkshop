@@ -41,5 +41,9 @@ export class HomePage {
   removeItem(note: Note){
     this.noteListService.removeNote(note);
   }
+
+  addPhoto(){
+    this.navCtrl.push('photo-page');
+  }
   
 }

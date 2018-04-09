@@ -1,0 +1,23 @@
+<!--
+  Generated template for the PhotoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Ionic Photo Firebase Storage</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div pading text-center>
+    <a href="{{someTextUrl}}">Your uploaded photo here</a>
+    <br />
+    <img src={{currentImage}}/>
+    <button ion-button clear (click)="grabPicture()">Take a Photo</button>
+  </div>
+</ion-content>
