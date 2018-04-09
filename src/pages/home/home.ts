@@ -37,4 +37,9 @@ export class HomePage {
   editItem(note: Note){
     this.navCtrl.push('edit-note',{note: note});
   }
+
+  removeItem(note: Note){
+    this.noteListService.removeNote(note);
+  }
+  
 }

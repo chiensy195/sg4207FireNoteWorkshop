@@ -4,6 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Note } from '../../model/note';
 import { NoteListServiceProvider } from '../../providers/note-list-service/note-list-service';
 import { not } from '@angular/compiler/src/output/output_ast';
+import { HomePage } from '../home/home'
 
 /**
  * Generated class for the AddNotePage page.
@@ -34,7 +35,7 @@ export class AddNotePage {
 
   addNote(note: Note){
     this.noteListService.addNote(note).then(ref => {
-      this.navCtrl.setRoot('HomePage');
+      this.navCtrl.setRoot(HomePage);
     });
   }
 

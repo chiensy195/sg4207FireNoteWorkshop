@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { Note } from '../../model/note';
 import { NoteListServiceProvider } from '../../providers/note-list-service/note-list-service';
-
+import { HomePage } from '../home/home'
 /**
  * Generated class for the EditNotePage page.
  *
@@ -35,13 +35,13 @@ export class EditNotePage {
 
   updateNote(note: Note){
     this.noteListService.updateNote(note).then(()=>{
-      this.navCtrl.setRoot('HomePage');
+      this.navCtrl.setRoot(HomePage);
     });
   }
 
   removeNote(note: Note){
     this.noteListService.removeNote(note).then(()=>{
-      this.navCtrl.setRoot('HomePage');
+      this.navCtrl.setRoot(HomePage);
     });
   }
 }
