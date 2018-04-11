@@ -45,5 +45,9 @@ export class HomePage {
   addPhoto(){
     this.navCtrl.push('photo-page');
   }
+
+  viewMap(){
+    this.navCtrl.push('map-view');
+  }
   
 }

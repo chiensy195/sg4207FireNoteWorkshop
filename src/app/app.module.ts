@@ -17,6 +17,10 @@ import { AngularFireStorageModule } from 'angularfire2/storage';
 import { HttpClientModule } from '@angular/common/http';
 
 import { Camera } from '@ionic-native/camera';
+
+import { Geolocation } from '@ionic-native/geolocation';
+import { Device } from '@ionic-native/device';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -41,7 +45,9 @@ import { Camera } from '@ionic-native/camera';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     NoteListServiceProvider,
     Camera,
-    LoadingController
+    LoadingController,
+    Geolocation,
+    Device
   ]
 })
 export class AppModule {}

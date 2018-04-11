@@ -28,7 +28,6 @@ export class PhotoPage {
 
   constructor(public navCtrl: NavController, 
     public camera: Camera, public loadingCrtl: LoadingController) {
-      //firebase.initializeApp(FIREBASE_CONFIG);
       this.getSomeText();
   }
 
