@@ -50,4 +50,7 @@ export class HomePage {
     this.navCtrl.push('map-view');
   }
   
+  addVoice(){
+    this.navCtrl.push('sound-page');
+  }
 }

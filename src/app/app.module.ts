@@ -21,6 +21,9 @@ import { Camera } from '@ionic-native/camera';
 import { Geolocation } from '@ionic-native/geolocation';
 import { Device } from '@ionic-native/device';
 
+import { Media } from '@ionic-native/media';
+import { File } from '@ionic-native/file';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -47,7 +50,9 @@ import { Device } from '@ionic-native/device';
     Camera,
     LoadingController,
     Geolocation,
-    Device
+    Device,
+    Media,
+    File
   ]
 })
 export class AppModule {}
