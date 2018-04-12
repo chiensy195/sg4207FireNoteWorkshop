@@ -14,10 +14,18 @@
 
 
 <ion-content padding>
-  <div pading text-center>
-    <a href="{{someTextUrl}}">Your uploaded photo here</a>
-    <br />
-    <img src={{currentImage}}/>
-    <button ion-button clear (click)="grabPicture()">Take a Photo</button>
+  <div class="item item-input-inset">
+      <button ion-button outline (click)="grabPicture()">Take a Photo</button>
+      <button ion-button outline>Record a video</button>
+  </div>
+      
+
+    
+
+    
+  <div>
+      <a href="{{someTextUrl}}">Your uploaded photo here</a>
+      <br />
+      <img src={{currentImage}}/>
   </div>
 </ion-content>
