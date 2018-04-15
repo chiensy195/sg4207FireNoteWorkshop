@@ -53,4 +53,8 @@ export class HomePage {
   addVoice(){
     this.navCtrl.push('sound-page');
   }
+
+  addVideo(){
+    this.navCtrl.push('video-page');
+  }
 }
