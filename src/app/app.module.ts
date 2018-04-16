@@ -21,8 +21,11 @@ import { Camera } from '@ionic-native/camera';
 import { Geolocation } from '@ionic-native/geolocation';
 import { Device } from '@ionic-native/device';
 
+import { MediaCapture } from '@ionic-native/media-capture'
 import { Media } from '@ionic-native/media';
 import { File } from '@ionic-native/file';
+
+import { IonicStorageModule } from '@ionic/storage'
 
 @NgModule({
   declarations: [
@@ -33,6 +36,7 @@ import { File } from '@ionic-native/file';
     BrowserModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot(),
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
     AngularFireDatabaseModule,
     AngularFireStorageModule
@@ -51,6 +55,7 @@ import { File } from '@ionic-native/file';
     LoadingController,
     Geolocation,
     Device,
+    MediaCapture,
     Media,
     File
   ]
